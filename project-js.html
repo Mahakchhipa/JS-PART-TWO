@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript color changer switcher</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .button {
+      border: 2px solid black;
+      padding: 50px
+    }
+
+    .canvas{
+        height: 200px;
+    
+    }
+    h1{
+        padding: 80px 20px; 
+    }
+  </style>
+  <body>
+   <div style="height: 100px; align-items: center;">
+    <nav>
+        <a href="#" aria-current="page">Home</a>
+        <a
+          href="https://www.youtube.com/watch?v=_TjtAyMkiTI&t=4082s"
+          target="_blank"
+        >
+          Youtube Chanel</a
+        >
+      </nav>
+   </div>
+
+    <div class="canvas">
+      <h1>Colour Scheme Swicher</h1>
+      <span class="button" id="grey"> Grey</span>
+      <span class="button" id="White">White</span>
+      <span class="button" id="Blue">Blue</span>
+      <span class="button" id="Yellow">Yellow</span>
+      <span class="button" id="Red">Red</span>
+      <span class="button" id="Pink">Pink</span>
+    </div>
+    <!-- <h2>Try Clicking The One Of The Colour Button Of The Images  </h2> -->
+  </body>
+  <script>
+    const buttons = document.querySelectorAll('.button');
+    const body = document.querySelector("body");
+    buttons.forEach(function (button)
+{
+    console.log(button)
+
+   
+ button.addEventListener('click', function (e){
+    console.log(e);
+    console.log(e.target);
+    if(e.target.id === 'grey'){
+        body.style.backgroundColor= e.target.id;
+    }
+    if(e.target.id === 'White'){
+        body.style.backgroundColor= e.target.id;
+    }
+    if(e.target.id === 'Blue'){
+        body.style.backgroundColor= e.target.id;
+    }
+    if(e.target.id === 'Yellow'){
+        body.style.backgroundColor= e.target.id;
+    }
+    if(e.target.id === 'Red'){
+        body.style.backgroundColor= e.target.id;
+    }
+    if(e.target.id === 'Pink'){
+        body.style.backgroundColor= e.target.id;
+    }
+})
+})
+
+  </script>
+</html>
